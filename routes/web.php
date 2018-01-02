@@ -17,5 +17,9 @@ Route::get('/', function () {
 
 
 Route::get('/sadikul', function () {
-    return "OOPS";
+    return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
